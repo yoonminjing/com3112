@@ -1,3 +1,4 @@
+
 import pygame
 import time
 import random
@@ -10,7 +11,6 @@ black = (0, 0, 0)
 red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
-orange = (255, 165, 0)
 
 dis_width = 600
 dis_height = 400
@@ -29,12 +29,13 @@ def your_score(score):
     dis.blit(value, [0, 0])
 
 def our_snake(snake_block, snake_list):
-    for x in snake_list:
-        pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
+    for idx, x in enumerate(snake_list):
+        color = (255, 0, 0) if idx % 3 == 0 else (0, 255, 0) if idx % 3 == 1 else (0, 0, 255)
+        pygame.draw.rect(dis, color, [x[0], x[1], snake_block, snake_block])
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
-    dis.blit(mesg, [dis_width / 6, dis_height / 3])
+    dis.blit(mesg, [(dis_width - mesg.get_width()) / 2, (dis_height - mesg.get_height()) / 2])
 
 def gameLoop():
     game_over = False
@@ -59,7 +60,7 @@ def gameLoop():
 
         while game_close == True:
             dis.fill(blue)
-            message("game over zzz - zlzlzlzlzlzl", red)
+            message("Game Over! Press C-Play Again or Q-Quit", red)
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -94,7 +95,8 @@ def gameLoop():
         y1 += y1_change
         dis.fill(blue)
         pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
-        pygame.draw.rect(dis, orange, [special_foodx, special_foody, snake_block, snake_block])
+        pygame.draw.rect(dis, (255, 165, 0), [special_foodx, special_foody, snake_block, snake_block])
+        
         snake_Head = []
         snake_Head.append(x1)
         snake_Head.append(y1)
