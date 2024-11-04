@@ -2,16 +2,13 @@
 import pygame
 import time
 import random
+import math
 
 pygame.init()
 
 white = (255, 255, 255)
-yellow = (255, 255, 102)
 black = (0, 0, 0)
-red = (213, 50, 80)
-green = (0, 255, 0)
 blue = (50, 153, 213)
-orange = (255, 165, 0)
 
 dis_width = 600
 dis_height = 400
@@ -25,17 +22,29 @@ snake_speed = 15
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
 
+pastel_colors = [
+    (255, 182, 193),  # Light Pink
+    (255, 218, 185),  # Peach
+    (173, 216, 230),  # Light Blue
+    (144, 238, 144),  # Light Green
+    (255, 255, 224),  # Light Yellow
+]
+
 def your_score(score):
     value = score_font.render("Score: " + str(score), True, white)
     dis.blit(value, [0, 0])
 
+def draw_heart(x, y):
+    pygame.draw.polygon(dis, (255, 0, 0), [(x + 5, y + 3), (x, y + 8), (x + 10, y + 8)])
+
 def our_snake(snake_block, snake_list):
-    for x in snake_list:
-        pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
+    for idx, x in enumerate(snake_list):
+        color = pastel_colors[idx % len(pastel_colors)]
+        pygame.draw.rect(dis, color, [x[0], x[1], snake_block, snake_block])
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
-    dis.blit(mesg, [dis_width / 6, dis_height / 3])
+    dis.blit(mesg, [(dis_width - mesg.get_width()) / 2, (dis_height - mesg.get_height()) / 2])
 
 def gameLoop():
     game_over = False
@@ -60,7 +69,7 @@ def gameLoop():
 
         while game_close == True:
             dis.fill(blue)
-            message("game over zzz - zlzlzlzlzlzl", red)
+            message("Game Over! Press C-Play Again or Q-Quit", (255, 0, 0))
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -94,8 +103,9 @@ def gameLoop():
         x1 += x1_change
         y1 += y1_change
         dis.fill(blue)
-        pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
-        pygame.draw.rect(dis, orange, [special_foodx, special_foody, snake_block, snake_block])
+        pygame.draw.rect(dis, (0, 255, 0), [foodx, foody, snake_block, snake_block])
+        draw_heart(special_foodx, special_foody)
+        
         snake_Head = []
         snake_Head.append(x1)
         snake_Head.append(y1)
