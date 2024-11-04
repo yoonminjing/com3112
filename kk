@@ -1,4 +1,3 @@
-
 import pygame
 import time
 import random
@@ -52,7 +51,7 @@ def gameLoop():
 
         while game_close == True:
             dis.fill(blue)
-            message("You Lost! Press C-Play Again or Q-Quit", red)
+            message("game over zzz - zlzlzlzlzlzl", red)
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -112,3 +111,4 @@ def gameLoop():
     quit()
 
 gameLoop()
+
