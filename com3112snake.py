@@ -1,14 +1,19 @@
+import수입품 pygame파이게임 가져오기
+
+pygame.init그init그 안에안에(((())))))))))))))))pygame.init그init그 안에안에 (((())))))))))))))))
+
+screen = pygame.display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이.화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면화면 = pygame.display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이.set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((400,200))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드set_modeset_modeset_modeset_모드((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((400,200))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+pygame.display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이.pygame파이게임파이게임pygame파이게임파이게임pygame파이게임파이게임pygame파이게임파이게임pygame파이게임파이게임pygame파이게임파이게임pygame파이게임파이게임pygame파이게임파이게임 파이게임.display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이.set_caption세트_세트_set_caption세트_세트_set_caption세트_세트_set_caption세트_세트_set_caption세트_세트_set_caption세트_세트_set_caption세트_세트_set_caption세트_세트_ caption세트 caption캡션caption캡션caption캡션caption캡션caption캡션caption캡션caption캡션caption캡션(((((((((((((((((((((((((((((((("Snake Game ver 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0"))))))))))))))))))))))))))))))))set_caption세트_ caption캡션caption캡션caption캡션caption캡션caption캡션caption캡션caption캡션caption캡션(((((((((((((((((((((((((((((((("스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0""스네이크 게임 버전 1.0"))))))))))))))))))))))))))))))))
+pygame.display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이.update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다update갱신하다(((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))pygame.display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이display디스플레이.업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트업데이트 (((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+running = True실행 중 = True진실의
+while하는 동안에 running:달리는 동안:
+    for위해서 event in안에 pygame.event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트.get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) :    pygame.event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트event이벤트.get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다get얻다 (((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))의 이벤트용 :
+            print인쇄print인쇄 ((((((((((((event))))))))))))            인쇄((((((((((((이벤트))))))))))))
 import pygame
+import time
+import random
 
 pygame.init()
 
-screen = pygame.display.set_mode((400,200))
-pygame.display.set_caption("Snake Game ver 1.0")
-pygame.display.update()
-
-running = True
-while running:
-    for event in pygame.event.get() :
-            print (event)
-
-#pygame.quit()
+#pygame.quit()#pygame.() 중단#pygame.quit ()#pygame.() 중단
