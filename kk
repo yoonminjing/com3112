@@ -1,4 +1,3 @@
-import pygame
 import random
 
 pygame.init()
@@ -39,5 +38,6 @@ def gameLoop():
         pygame.display.flip()
         clock.tick(15)
 
-gameLoop()
-pygame.quit()
+if __name__ == "__main__":
+    gameLoop()
+    pygame.quit()
