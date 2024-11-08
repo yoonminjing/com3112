@@ -37,9 +37,8 @@ def draw_heart(x, y):
     pygame.draw.polygon(dis, (255, 0, 0), [(x + 5, y + 3), (x, y + 8), (x + 10, y + 8)])
 
 def our_snake(snake_block, snake_list):
-    for idx, x in enumerate(snake_list):
-        color = pastel_colors[idx % len(pastel_colors)]
-        pygame.draw.rect(dis, color, [x[0], x[1], snake_block, snake_block])
+    for x in snake_list:
+        pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
